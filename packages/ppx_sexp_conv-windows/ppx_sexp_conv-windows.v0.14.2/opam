@@ -12,7 +12,7 @@ build: [
 depends: [
   "ocaml-windows"    {>= "4.04.2"}
   "base-windows"     {>= "v0.14" & < "v0.15"}
-  "base        "     {>= "v0.14" & < "v0.15"}
+  "base"             {>= "v0.14" & < "v0.15"}
   "sexplib0-windows" {>= "v0.14" & < "v0.15"}
   "dune"             {>= "2.0.0"}
   "ppxlib-windows"   {>= "0.18.0" & < "0.22.0"}
@@ -23,5 +23,5 @@ description: "
 Part of the Jane Street's PPX rewriters collection.
 "
 url {
-  src: "https://github.com/janestreet/ppx_sexp_conv/archive/v0.14.2.tar.gzhttps://github.com/janestreet/ppx_sexp_conv/archive/v0.14.2.tar.gz"
+  src: "https://github.com/janestreet/ppx_sexp_conv/archive/v0.14.2.tar.gz"
 }
