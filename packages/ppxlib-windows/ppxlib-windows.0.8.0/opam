@@ -12,8 +12,8 @@ build: [
 ]
 depends: [
   "ocaml-windows"                   {>= "4.04.1"}
-  "base"                            {>= "v0.11.0" & < "v0.13"}
-  "base-windows"                    {>= "v0.11.0" & < "v0.13"}
+  "base"                            {>= "v0.11.0"}
+  "base-windows"                    {>= "v0.11.0"}
   "dune"                            {build}
   "ocaml-compiler-libs"             {>= "v0.11.0"}
   "ocaml-compiler-libs-windows"     {>= "v0.11.0"}
