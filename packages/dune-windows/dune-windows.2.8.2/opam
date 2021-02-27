@@ -31,7 +31,7 @@ depends: [
 ]
 build: [
   ["ocaml" "bootstrap.ml" "-j" jobs]
-  ["./dune.exe" "build" "-p" dune "--profile" "dune-bootstrap" "-j" jobs "-x" "windows"]
+  ["./dune.exe" "build" "-p" "dune" "--profile" "dune-bootstrap" "-j" jobs "-x" "windows"]
 ]
 url {
   src: "https://github.com/ocaml/dune/releases/download/2.8.2/dune-2.8.2.tbz"
