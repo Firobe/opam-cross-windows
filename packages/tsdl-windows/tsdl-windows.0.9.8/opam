@@ -14,7 +14,7 @@ depends: [
   "ocamlbuild" {build}
   "topkg" {build & >= "1.0.1"}
   "ctypes-windows" {>= "0.9.0"}
-  "ctypes-foreign-windows" ]
+  "ctypes-foreign" ]
 build: [[ "ocaml" "pkg/pkg.ml" "build" "--pinned" "%{pinned}%" "--toolchain"
 "windows"]]
 install: [["opam-installer" "--prefix=%{prefix}%/windows-sysroot" "tsdl.install"]]
