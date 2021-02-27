@@ -1,7 +1,15 @@
-diff -Naur tsdl-windows.0.9.8/myocamlbuild.ml b/myocamlbuild.ml
---- tsdl-windows.0.9.8/myocamlbuild.ml	2021-02-27 04:56:49.478638721 +0100
-+++ b/myocamlbuild.ml	2021-02-27 05:01:16.728130327 +0100
-@@ -35,17 +35,7 @@
+diff -Naur a/myocamlbuild.ml b/myocamlbuild.ml
+--- a/myocamlbuild.ml	2021-02-27 05:08:07.834275632 +0100
++++ b/myocamlbuild.ml	2021-02-27 05:08:42.790911002 +0100
+@@ -19,7 +19,6 @@
+   let libs_l = pkg_config "libs-only-l" lib in
+   let libs_L = pkg_config "libs-only-L" lib in
+   let linker = match os with
+-  | "Linux\n" -> [A "-Wl,-no-as-needed"]
+   | _ -> []
+   in
+   let make_opt o arg = S [ A o; arg ] in
+@@ -36,17 +35,7 @@
  
  (* tsdl_const.ml generation. *)
  
@@ -20,9 +28,9 @@ diff -Naur tsdl-windows.0.9.8/myocamlbuild.ml b/myocamlbuild.ml
  ;;
  
  let () =
-diff -Naur tsdl-windows.0.9.8/src/tsdl_consts.ml b/src/tsdl_consts.ml
---- tsdl-windows.0.9.8/src/tsdl_consts.ml	1970-01-01 01:00:00.000000000 +0100
-+++ b/src/tsdl_consts.ml	2021-02-27 04:59:53.528284438 +0100
+diff -Naur a/src/tsdl_consts.ml b/src/tsdl_consts.ml
+--- a/src/tsdl_consts.ml	1970-01-01 01:00:00.000000000 +0100
++++ b/src/tsdl_consts.ml	2021-02-27 05:08:27.650924372 +0100
 @@ -0,0 +1,884 @@
 +let sdl_init_timer = 1
 +let sdl_init_audio = 16
