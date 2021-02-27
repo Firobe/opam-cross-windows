@@ -8,6 +8,9 @@ bug-reports: "https://github.com/dbuenzli/tsdl/issues"
 tags: [ "audio" "bindings" "graphics" "media" "opengl" "input" "hci"
         "org:erratique" ]
 license: "ISC"
+patches: [
+    "remove_gen.patch"
+]
 depends: [
   "ocaml-windows" {>= "4.03.0"}
   "ocamlfind" {build}
