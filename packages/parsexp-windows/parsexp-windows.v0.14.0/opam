@@ -10,7 +10,7 @@ build: [
   ["dune" "build" "-p" "parsexp" "-j" jobs "-x" "windows"]
 ]
 patches: [
- "files/remove_gen.patch" 
+ "remove_gen.patch" 
 ]
 depends: [
   "ocaml-windows"    {>= "4.04.2"}
