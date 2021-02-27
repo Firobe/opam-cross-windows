@@ -7,8 +7,8 @@ dev-repo: "git+https://github.com/janestreet/parsexp.git"
 doc: "https://ocaml.janestreet.com/ocaml-core/latest/doc/parsexp/index.html"
 license: "MIT"
 build: [
-  ["dune" "build" "src/gen/gen_bytes0.exe" "-j" jobs "-x" "windows" "&&"
-   "dune" "build" "-p" "parsexp" "-j" jobs "-x" "windows"]
+  ["dune" "build" "src/gen/gen_bytes0.exe" "-p" "parsexp" "-j" jobs "-x"
+  "windows"]
 ]
 depends: [
   "ocaml-windows"    {>= "4.04.2"}
